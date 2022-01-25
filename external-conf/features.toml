@@ -1,0 +1,5 @@
+[[features]]
+  name = "dummyCache"
+  uri = "file:///features/cache.dummy_1.0.0.jar"
+  version = "1.0.0"
+  dependencies = ["distributedMap-1.0"]

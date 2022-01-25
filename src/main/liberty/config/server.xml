@@ -1,0 +1,16 @@
+<server description="Intro REST Guide Liberty server">
+  <!-- tag::featureManager[] -->
+  <featureManager>
+      <feature>jaxrs-2.1</feature>
+  </featureManager>
+  <!-- end::featureManager[] -->
+
+  <!-- tag::httpEndpoint[] -->
+  <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
+                id="defaultHttpEndpoint" host="*" />
+  <!-- end::httpEndpoint[] -->
+  
+  <!-- tag::application[] -->
+  <application name="app" location="/opt/ol/wlp/usr/servers/defaultServer/apps/app" type="war" context-root="/"/>
+  <!-- end::application[] -->
+</server>

@@ -1,0 +1,11 @@
+<server description="Intro REST Guide Liberty server">
+  <!-- tag::featureManager[] -->
+  <featureManager>
+      <feature>jaxrs-2.1</feature>
+  </featureManager>
+  <!-- end::featureManager[] -->
+
+  <!-- tag::httpEndpoint[] -->
+  <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" host="*" />
+  <!-- end::httpEndpoint[] -->
+</server>

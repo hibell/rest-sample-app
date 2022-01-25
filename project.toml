@@ -1,0 +1,27 @@
+[project]
+  id = "com.github.hibell.rest-sample-app"
+  name = "REST Sample App"
+  version = "1.0.0"
+
+[[build.buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/eclipse-openj9:9.1.1"
+[[build.buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/syft:1.6.0"
+[[build.buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/maven:6.1.0"
+[[build.buildpacks]]
+  # 0.2.2 created from add-user-features branch:
+  #   create-package --destination buildpack --version "0.2.2" && pack buildpack package paketo-buildpacks/open-liberty:0.2.2 --config package.toml
+  uri = "docker://paketo-buildpacks/open-liberty:0.2.2"
+
+[[build.env]]
+  name = "BP_OPENLIBERTY_EXT_CONF_URI"
+  value = "file:///tmp/conf.tar.gz"
+
+[[build.env]]
+  name = "BP_OPENLIBERTY_EXT_CONF_VERSION"
+  value = "1.0.0"
+
+[[build.env]]
+  name = "BP_OPENLIBERTY_EXT_CONF_SHA256"
+  value = "953e665e4126b75fecb375c88c51a1ddcf4d12474d43576323862d422e625517"

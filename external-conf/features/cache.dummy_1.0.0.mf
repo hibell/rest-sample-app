@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+IBM-Short-Name: dummyCache
+IBM-Feature-Version: 2
+Subsystem-SymbolicName: dummyCache;visibility:=public
+Subsystem-Version: 1.0.0
+Subsystem-Type: osgi.subsystem.feature
+Subsystem-ManifestVersion: 1.0
+Subsystem-Content: cache.dummy;version="1.0.0"
+
