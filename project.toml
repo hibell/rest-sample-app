@@ -12,7 +12,7 @@
 [[build.buildpacks]]
   # 0.2.2 created from add-user-features branch:
   #   create-package --destination buildpack --version "0.2.2" && pack buildpack package paketo-buildpacks/open-liberty:0.2.2 --config package.toml
-  uri = "docker://paketo-buildpacks/open-liberty:0.2.2"
+  uri = "docker://paketo-buildpacks/open-liberty:dev"
 
 [[build.env]]
   name = "BP_OPENLIBERTY_EXT_CONF_URI"
